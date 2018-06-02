@@ -29,14 +29,14 @@
   <ng-template ngFor let-match let-i="index" [ngForOf]="matches">
     <h6 *ngIf="match.isHeader()" class="dropdown-header">{{ match }}</h6>
     <ng-template [ngIf]="!match.isHeader()">
-      <button #liElements
+      <div #liElements
               class="dropdown-item"
               (click)="selectMatch(match, $event)"
               (mouseenter)="selectActive(match)"
               [class.active]="isActive(match)">
         <ng-template [ngTemplateOutlet]="itemTemplate || bsItemTemplate"
                      [ngTemplateOutletContext]="{item:match.item, index:i, match:match, query:query}"></ng-template>
-      </button>
+    </div>
     </ng-template>
   </ng-template>
 </ng-template>

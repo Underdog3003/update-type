@@ -76,12 +76,16 @@ export class TypeaheadContainerComponent {
     }
 
     if (this._matches.length > 0) {
-      this._active = this._matches[0];
-      if (this._active.isHeader()) {
-        this.nextActiveMatch();
+      if (this._active) {
+        const match = this._matches.find(m => m.value === this._active.value);
+        if (match) {
+        this.selectActive(match);
+        } else {
+        this._active = undefined;
       }
     }
   }
+}
 
   get optionsListTemplate(): TemplateRef<any> {
     return this.parent ? this.parent.optionsListTemplate : undefined;
@@ -101,7 +105,9 @@ export class TypeaheadContainerComponent {
   }
 
   selectActiveMatch(): void {
+    if (this._active) {
     this.selectMatch(this._active);
+    }
   }
 
   prevActiveMatch(): void {
