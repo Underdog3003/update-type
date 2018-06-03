@@ -1,8 +1,8 @@
 {
-  "name": "ngx-bootstrap-base",
+  "name": "custom-typeahead",
   "version": "3.0.0",
   "description": "Native Angular Bootstrap Components",
-  "private": true,
+  "private": false,
   "scripts": {
     "lite-server": "lite-server -c scripts/bs-config.js",
     "demo.gen-docs": "node scripts/docs/get-doc.js",
@@ -56,16 +56,16 @@
     "angular2",
     "twitter-bootstrap"
   ],
-  "author": "Dmitriy Shekhovtsov <valorkin@gmail.com>",
+  "author": "Underdog3003 <aliya.shariff6@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/valor-software/ngx-bootstrap.git"
+    "url": "https://github.com/Underdog3003/update-type.git"
   },
   "bugs": {
-    "url": "https://github.com/valor-software/ngx-bootstrap/issues"
+    "url": "https://github.com/Underdog3003/update-type/issues"
   },
-  "homepage": "https://github.com/valor-software/ngx-bootstrap#readme",
+  "homepage": "https://github.com/Underdog3003/update-type#readme",
   "peerDependencies": {
     "@angular/common": ">=6.0.0",
     "@angular/core": ">=6.0.0"
