@@ -15,7 +15,7 @@ import {
 } from '@angular/core';
 import { NgControl } from '@angular/forms';
 
-import { from, Observable, Subscription } from 'rxjs';
+import { Observable, Subscription, from } from 'rxjs';
 import { ComponentLoader, ComponentLoaderFactory } from '../component-loader/index';
 import { TypeaheadContainerComponent } from './typeahead-container.component';
 import { TypeaheadMatch } from './typeahead-match.class';
